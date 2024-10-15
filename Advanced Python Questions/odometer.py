@@ -1,16 +1,11 @@
-def get_difference(actual_number):
-    skipped_number = int(str(actual_number).replace("5", "6"))
-    print(actual_number, "Actual")
-    print(skipped_number, "Skipped")
-    difference = skipped_number - actual_number
-    return difference
-
 apparent_distance = 160648
-total_difference = 0
-for i in range(apparent_distance):
+actual_distance = 0
+for i in range(1, apparent_distance + 1):
     if str(i).__contains__("5"):
-        total_difference += get_difference(i)
+        i = int(str(i).replace("5", "6"))
+        continue
+    actual_distance += 1
+    print(i, actual_distance)
+print("The actual distance travelled is:", actual_distance)
 
-#print(total_difference)
-print(abs(apparent_distance - total_difference))
 
