@@ -5,7 +5,6 @@ for i in range(1, apparent_distance + 1):
         i = int(str(i).replace("5", "6"))
         continue
     actual_distance += 1
-    print(i, actual_distance)
-print("The actual distance travelled is:", actual_distance)
+print("The actual distance travelled is:", str(actual_distance) + "km")
 
 

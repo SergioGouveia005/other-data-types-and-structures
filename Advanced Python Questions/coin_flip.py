@@ -5,7 +5,7 @@ def flip_a_coin():
 
 correct_guesses = 0
 #Strategy 1 = Randomly changing between heads and tails
-for i in range(10000):
+for i in range(100):
     if flip_a_coin() == flip_a_coin():
         correct_guesses += 1
 
@@ -14,7 +14,7 @@ print("With Strategy 1 = Randomly changing between heads and tails\n" +
 
 correct_guesses = 0
 #Strategy 2 = Sticking with one
-for i in range(10000):
+for i in range(100):
     if flip_a_coin() == 1:
         correct_guesses += 1
 

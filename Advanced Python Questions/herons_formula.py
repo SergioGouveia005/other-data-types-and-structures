@@ -5,4 +5,4 @@ def calculate_triangle_area(a, b, c):
     return area
 
 area = calculate_triangle_area(5,6,8)
-print("The area is:", area)
+print("The area is:", area.__round__(2))
